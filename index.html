@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Photo Payments | J. Amerson Photography</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto 40px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #000;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    .info-box {
+      background: #fafafa;
+      padding: 20px;
+      border-left: 4px solid #000;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .step {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 15px 18px;
+      border: 1px solid #eee;
+      font-size: 14px;
+    }
+    .step span {
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .package {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 15px 18px;
+      border: 1px solid #eee;
+      font-size: 14px;
+    }
+    .package h3 {
+      margin-bottom: 6px;
+    }
+    .package ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    }
+    .gallery-caption {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+    .payment-links a {
+      display: block;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .payment-links a:hover {
+      opacity: 0.9;
+    }
+    .note {
+      font-size: 13px;
+      color: #666;
+      margin-top: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .popup-hidden {
+      display: none;
+    }
+    .popup-box {
+      background: #ffffff;
+      max-width: 420px;
+      width: 90%;
+      border-radius: 14px;
+      padding: 20px 22px 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+    .popup-box h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .popup-box p {
+      font-size: 14px;
+      margin: 8px 0 16px;
+    }
+    .popup-box button {
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 10px 18px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .popup-box button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header>J. Amerson Photography &middot; Sports Photo Orders</header>
+
+  <div class="container">
+    <h2>Order Your Athlete's Photos</h2>
+    <div class="info-box">
+      <p>Thank you for supporting local youth sports photography! Please review the sample designs and packages below, then submit your payment using Venmo or Square. After payment, send a message with your player's name, team, jersey number, and the package you are purchasing.</p>
+    </div>
+
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <span>1. Choose a Package</span>
+        Use the pricing guide you received or the list below to pick the best option for your family.
+      </div>
+      <div class="step">
+        <span>2. Pay Online</span>
+        Send payment using Venmo or Square using the buttons on this page.
+      </div>
+      <div class="step">
+        <span>3. Send Details</span>
+        Message me your player's name, team, jersey number, and package choice.
+      </div>
+      <div class="step">
+        <span>4. Delivery</span>
+        Edited images and prints will be delivered based on the league delivery plan discussed.
+      </div>
+    </div>
+
+    <h2>Sample Sports Photo Designs</h2>
+    <p class="gallery-caption">Here are a few examples of custom sports graphics and memory mates. Your child's design will be customized with their photo, team, and stats.</p>
+    <div class="gallery">
+      <img src="images/messiah-shell.png" alt="Basketball poster style graphic of Messiah Shell" />
+      <img src="images/jv-team.png" alt="Calhoun Sandcrabs JV team graphic" />
+      <img src="images/talen-henson.png" alt="Talen Henson basketball graphic" />
+      <img src="images/journee-boots.png" alt="Journee Boots basketball graphic" />
+      <img src="images/emery-williams.png" alt="Emery Williams basketball graphic" />
+      <img src="images/fehrle-r.png" alt="Fehrle R basketball graphic" />
+      <img src="images/bub-photo.png" alt="Michael Bub Williams player photo" />
+      <img src="images/bub-stats.png" alt="Michael Bub Williams stat card" />
+    </div>
+
+    <h2>Packages &amp; Pricing</h2>
+    <p><strong>Last day to order:</strong> Friday, December 12, 2025</p>
+    <div class="packages">
+      <div class="package">
+        <h3>Package 1 &ndash; $25</h3>
+        <ul>
+          <li>(1) 8x10</li>
+          <li>(1) 5x7</li>
+          <li>(8) Wallets</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>Package 2 &ndash; $30</h3>
+        <ul>
+          <li>(1) 8x10</li>
+          <li>(2) 5x7</li>
+          <li>(8) Wallets</li>
+          <li>(1) 5x7 Team</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>Package 3 &ndash; $35</h3>
+        <ul>
+          <li>(1) 5x7 Team</li>
+          <li>(1) 8x10</li>
+          <li>(2) 5x7</li>
+          <li>(8) Wallets</li>
+          <li>(2) 3x5</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>Package 4 &ndash; $40</h3>
+        <ul>
+          <li>(1) Memory Mate</li>
+          <li>(1) 8x10</li>
+          <li>(2) 5x7</li>
+          <li>(8) Wallets</li>
+          <li>(2) 3x5</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>Package 5 &ndash; $45</h3>
+        <ul>
+          <li>(1) Memory Mate</li>
+          <li>(1) 8x10</li>
+          <li>(2) 5x7</li>
+          <li>(8) Wallets</li>
+          <li>(1) Button</li>
+          <li>(1) Magnet</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>A La Carte</h3>
+        <ul>
+          <li>Digital file with print release &ndash; $25</li>
+          <li>8x10 print &ndash; $10</li>
+          <li>5x7 print &ndash; $5</li>
+          <li>Wallets (8) &ndash; $10</li>
+          <li>Memory Mate &ndash; $15</li>
+          <li>Magnet (2) &ndash; $12</li>
+          <li>Button &ndash; $7</li>
+          <li>Trader cards (12) &ndash; $15</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Varsity Banners</h2>
+    <div class="info-box">
+      <p><strong>Varsity Senior Individual Banner:</strong> $40</p>
+      <p><strong>Varsity Team Banner Contribution:</strong> $20 per varsity player</p>
+      <p>Please include whether your payment is for an individual senior banner, team banner contribution, or both in the payment notes.</p>
+    </div>
+
+    <h2>Submit Payment</h2>
+    <div class="payment-links">
+      <a href="https://venmo.com/u/JAmersonPhoto" target="_blank">Pay with Venmo (@JAmersonPhoto)</a>
+      <a href="https://square.link/u/9797Udjj" target="_blank">Pay with Square (Photo & Banner Payments)</a>
+    </div>
+    <p class="note">Please include your player's name, team, jersey number, and what you are paying for (package, a la carte items, senior banner, team banner contribution) in the payment notes.</p>
+
+    <h2>Questions or Custom Requests?</h2>
+    <div class="info-box">
+      <p>If you have any questions, need a custom design, or are interested in team/league packages, please message me on Facebook or email me anytime.</p>
+      <p><strong>Email:</strong> jaievishaparker@gmail.com</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 J. Amerson Photography &mdash; All Rights Reserved
+  </footer>
+
+  <!-- Order Deadline Popup -->
+  <div id="order-popup" class="popup-overlay popup-hidden">
+    <div class="popup-box">
+      <h2>Sports Photo Orders</h2>
+      <p><strong>Last day to order is Friday, December 12, 2025.</strong></p>
+      <p>Please submit your payment and player details before the deadline. Thank you for supporting J. Amerson Photography!</p>
+      <button id="popup-close">Got it</button>
+    </div>
+  </div>
+
+  <script>
+    // Simple popup that shows once per browser using localStorage
+    (function () {
+      const popup = document.getElementById('order-popup');
+      const closeBtn = document.getElementById('popup-close');
+      const storageKey = 'ja-photo-order-popup-dismissed';
+
+      if (!localStorage.getItem(storageKey)) {
+        popup.classList.remove('popup-hidden');
+      }
+
+      closeBtn.addEventListener('click', function () {
+        popup.classList.add('popup-hidden');
+        localStorage.setItem(storageKey, 'true');
+      });
+    })();
+  </script>
+</body>
+</html>
